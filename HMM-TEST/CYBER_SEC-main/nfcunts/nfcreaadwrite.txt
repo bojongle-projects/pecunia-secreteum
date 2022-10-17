@@ -1,0 +1,14 @@
+#Readwrite.py
+
+import nfc 
+
+
+
+import os
+
+from nfc.clf import RemoteTarget
+target = clf.sense(RemoteTarget('106A'), RemoteTarget('106B'), RemoteTarget('212F'))
+print(target)
+
+
+
