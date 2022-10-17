@@ -1,0 +1,138 @@
+<AphroditeApp>:
+
+        <loginpageScreen>:
+        Screen:
+            id: loginpageScreen
+            name: 'loginpageScreen'
+            BoxLayout:
+                orientation: 'vertical'
+                padding: 10
+                spacing: 10
+                Image:
+                    source: 'logo.png'
+                    size_hint_y: 0.5
+                BoxLayout:
+                    orientation: 'vertical'
+                    spacing: 10
+                    size_hint_y: 0.5
+                    TextInput:
+                        id: username
+                        hint_text: 'Username'
+                        multiline: False
+                    TextInput:
+                        id: password
+                        hint_text: 'Password'
+                        multiline: False
+                        password: True
+                    Button:
+                        text: 'Login'
+                        on_press: root.manager.current = 'mainScreen'
+                        size_hint_y: 0.5
+                    Button:
+                        text: 'Register'
+                        on_press: root.manager.current = 'signuppageScreen'
+                        size_hint_y: 0.5
+       
+
+       #Setup the signup page
+
+       <signuppage>:
+       Screen:
+            id: signuppageScreen
+            name: 'signuppageScreen'
+            BoxLayout:
+                orientation: 'vertical'
+                padding: 10
+                spacing: 10
+                Image:
+                    source: 'logo.png'
+                    size_hint_y: 0.5
+                BoxLayout:
+                    orientation: 'vertical'
+                    spacing: 10
+                    size_hint_y: 0.5
+                    TextInput:
+                        id: username
+                        hint_text: 'Username'
+                        multiline: False
+                    TextInput:
+                        id: password
+                        hint_text: 'Password'
+                        multiline: False
+                        password: True
+                    Button:
+                        text: 'Login'
+                        on_press: root.manager.current = 'mainScreen'
+                        size_hint_y: 0.5
+                    Button:
+                        text: 'Register'
+                        on_press: root.manager.current = 'registerScreen'
+                        size_hint_y: 0.5
+        
+        #Setup the reset password page
+
+        <resetpasswordpage>:
+        Screen:
+                id: resetpasswordpage
+                name: 'resetpasswordpage'
+                BoxLayout:
+                        orientation: 'vertical'
+                        padding: 10
+                        spacing: 10
+                        Image:
+                        source: 'logo.png'
+                        size_hint_y: 0.5
+                        BoxLayout:
+                        orientation: 'vertical'
+                        spacing: 10
+                        size_hint_y: 0.5
+                        TextInput:
+                                id: username
+                                hint_text: 'Username'
+                                multiline: False
+                        TextInput:
+                                id: password
+                                hint_text: 'Password'
+                                multiline: False
+                                password: True
+                        Button:
+                                text: 'Login'
+                                on_press: root.manager.current = 'loginpageScreen'
+                                size_hint_y: 0.5
+                        Button:
+                                text: 'Register'
+                                on_press: root.manager.current = 'signupScreen'
+                                size_hint_y: 0.5
+                
+        #Setup the home page
+
+        <homepage>:
+        Screen:
+                id: homepage
+                name: 'homepage'
+                BoxLayout:
+                        orientation: 'vertical'
+                        padding: 10
+                        spacing: 10
+                        Image:
+                        source: 'logo.png'
+                        size_hint_y: 0.5
+                        BoxLayout:
+                        orientation: 'vertical'
+                        spacing: 10
+                        size_hint_y: 0.5
+                        Label:
+                            text:'Welcome to Aphrodite'
+                        Label:
+                            text:'Please select an option'
+                        Button:
+                                text: 'Login'
+                                on_press: root.manager.current = 'loginpageScreen'
+                                size_hint_y: 0.5
+
+                        
+                        Button:
+                                text: 'Reset Password'
+                                on_press: root.manager.current = 'resetpasswordpage'
+                                size_hint_y: 0.5
+                        

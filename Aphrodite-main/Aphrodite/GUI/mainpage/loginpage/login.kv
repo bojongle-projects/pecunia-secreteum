@@ -1,0 +1,18 @@
+<AphroditeApp>:    
+    canvas:
+        Rectangle:
+            pos: self.center_x - 5, 0
+            size: 10, self.height
+            
+    Label:
+        font_size: 70  
+        center_x: root.width / 4
+        top: root.top - 50
+        text: "0"
+        
+    Label:
+        font_size: 70
+        center_x: root.width / 4 * 3
+        top: root.top - 10
+        text: "1"
+        on_press: root.canvas.children[0].pos = self.center_x - 5, 0
